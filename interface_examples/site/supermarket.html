@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: pink;
+        }
+        select {
+            margin: 10px 0;
+            padding: 5px;
+        }
+        button {
+            padding: 8px 15px;
+            cursor: pointer;
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1> Welcome to the Supermarket</h1>
+    <h2>Where you can buy very cheap your ingredients!!</h2>
+    <form name="selectForm">
+        <label for="ingredientsTypes">
+            Please choose your veggies and fruits
+        </label><br>
+        <select id="ingredientsTypes" name="ingredientsTypes" multiple size="7">
+            <option selected>grapes</option>
+            <option>tomato</option>
+             <option>lettuce</option>
+              <option>Sweet potato</option>
+               <option>onions</option>
+                <option>oregan</option>
+                 <option>avocado</option>
+        </select>
+        <br>
+        <button id="btn" type="button">How many items have you selected?</button>
+    </form>
+
+<script>
+// empezamos a crear la funcion y Usar El Loop For Statement
+function countSelected(selectObject){
+        let numberOfItemsSelected = 0;
+        for (let i = 0; i < selectObject.options.length; i++){
+            if(selectObject.options[i].selected){ //no entiendo porque usamos selected???
+                numberOfItemsSelected++; // que pasa si el usuario no selecciona nada?
+            } 
+        }
+        return numberOfItemsSelected;
+    }
+
+// para realmente verlo en el browser 
+const btn = document.getElementById("btn");
+//click event :
+btn.addEventListener("click", () => {
+    const ingredientsTypes = document.selectForm.ingredientsTypes;
+    //llamando a la funcion:
+    console.log(`You have selected ${countSelected(ingredientsTypes)} options.`);
+   alert(`You have selected ${countSelected(ingredientsTypes)} options.`);
+});
+
+</script>
+
+    
+</body>
+</html>
