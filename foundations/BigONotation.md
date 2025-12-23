@@ -6,7 +6,7 @@ if the numbers that belong to the input are bigger, then the constant number doe
 If a function is 5(n) and the other function is f(n),the constant number 5 will disappear and then both functions will have an <strong>O(n) linear time </strong> that means <strong>an execution time that grows linear with n.</strong><br/><br/>
 <strong>Sum Rule:</strong><br/>
 The Sum Rule is about a master algorithm which contains 2 algorithms inside of it. 
-These two algorithms are sequential. 
+<strong>These two algorithms are sequential.</stromg>
 Therefore, here comes the addition once both algorithms are detected and it is confirm that both algorithms are sequential.
 Then, the coefficient rule comes at the end to eliminate any constant that is present.
 Finally, you will have to keep only the most dominant Time complexity.<br/><br/>
