@@ -11,8 +11,8 @@ function  someFunction(n) {
 // 1000n
 // 20n
 // 1000n * 20n = 20000n²
-// Se aplica la regla del coeficiente y se elimina el 20
-// BigO Notation es O(n²)
+// The coefficient rule is applied, then the 20000 is deleted.
+// BigO Notation is O(n²)
 //2nd Exercise:
 function someFunction(n) {
 for(var i=0; i < n; i++){
@@ -25,8 +25,40 @@ for(var i=0; i < n; i++){
     }
 }
 }
-// first loop = O(n)
-// second loop = O(n²)
-// third loop = O(1)
-// fourth = O(1)
-// (O(n) + O(n²) + O(1) + O (1))= (O(n) + O(n²) + 2(O(1))) = O(n) + O(n²) + O(1) = O(1)
+// first loop ^ second loop ^ third Loop = n ** 3 (function cubic)
+// fourth loop is O (1)
+//  console.log is O(1)
+// then => n cubico * O(1) * O(1) => n cubico is the answer
+//3rd Exercise:
+function someFunction(n) {
+    for(var i=0; i < 1000; i++){
+        console.log("hi");
+    }
+}
+// first loop is O(1)
+// second lopp is O(1)
+// the reply is O(1)
+//Fourth Exercise:
+function someFunction(n) {
+    for(var i=0; i < n*10; i++) {
+        console.log(n);
+    }
+}
+//first loop : O (n)
+// second loop : O(1)
+// third loop : O(n)
+//Fifth Exercise:
+function someFunction(n) {
+    for (var i=0; i < n; i*2){
+        console.log(n);
+    }
+}
+// this function has logaritmic complexity of (log2n).
+
+//Sixth Exercise: 
+function someFunction(n) {
+    while(true){
+        console.log(n);
+    }
+}
+// This loop is infinite ( it has no end).
