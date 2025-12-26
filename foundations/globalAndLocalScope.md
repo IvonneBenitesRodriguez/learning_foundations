@@ -1,6 +1,12 @@
 ### Global Scope 
-In client-side JS : Generally it is the website inside which all the code is being executed.
-
+In client-side JS : Generally it is the website inside which all the code is being executed.<br/>
+Avoid the use of Global Scope.Because it can produce name collissions, difficult debugging, unexpected secondary effects,difficult testing, and memory leaks.<br/>
+To prevent it please use:<br/>
+Function Scope <br/>
+Let and Const with Block Scope <br/>
+Classes(ES6).<br/>
+Modules (ES6).<br/>
+Inmediately Invoked Function Expressions. <br/>
 ### Block Scope:
 The scope created with a pair of curly braces.
 
