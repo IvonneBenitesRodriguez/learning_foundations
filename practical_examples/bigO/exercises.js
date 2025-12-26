@@ -28,7 +28,7 @@ for(var i=0; i < n; i++){
 // first loop ^ second loop ^ third Loop = n ** 3 (function cubic)
 // fourth loop is O (1)
 //  console.log is O(1)
-// then => n cubico * O(1) * O(1) => n cubico is the answer
+// then => n cubic * O(1) * O(1) => n cubic is the answer
 //3rd Exercise:
 function someFunction(n) {
     for(var i=0; i < 1000; i++){
