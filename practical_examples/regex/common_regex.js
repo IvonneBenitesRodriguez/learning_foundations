@@ -1,2 +1,1 @@
-var reg = /\d+/;
-console.log(reg.test("123"));
+//The 5 most used regex patterns by Developers:
