@@ -61,3 +61,33 @@ switch(musicFavoriteCd) {
         default:
         console.log(`There are not available ${musicFavoriteCd}, sorry.`)
 }
+// other example:
+const favoriteDestination = "Isparta";
+switch(favoriteDestination) {
+    case "Paris":
+        console.log("Great city");
+    case "Milan":
+        console.log("Great place for shopping");
+    case "Florence":
+        console.log("Good place for culture and history");
+    case "Istambul":
+        console.log("Exotic place!");
+    case "Egypt":
+        console.log("Mystic place!");
+    case "Isparta":
+        console.log("Rose city! my next birthday destination!!");
+    break;
+    default:
+    console.log("I have reviewed lots of cities!");
+}
+//other example:
+const newLanguages = "mandarin";
+switch(newLanguages) {
+    case "spanish":
+        console.log("exotic language!");
+    case "mandarin":
+        console.log("future language!");
+        break;
+        default:
+            console.log("I do consider few options to learn!");
+}

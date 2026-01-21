@@ -11,3 +11,10 @@ do {
 // siga recorriendo += 1
 // imprima el valor
 // pero si el valor es mayor a 5 termina la funcion 
+//otro ejemplo:
+i = 0;
+do {
+    console.log(i);
+    i++;
+} while (1 < 10);
+// La condicion se evalua en este do..while loop despues de que se ejecuta el script.
