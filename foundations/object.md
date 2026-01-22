@@ -10,13 +10,24 @@ const object = { <br/>
     age: 42, <br/>
     bax: {myProp: 12}, <br/>
 };<br/><br/>
-You may access an object using dot notation:<br/>
-object.foo; //output : "bar" <br/>
-You may access an object using []: <br/>
-object["age"];//output: 42 <br/>
-Some other examples:<br/>
-object.bax.myProp;// Output : 12 <br/>
-object.bax;//{myProp:12} <br/>
+
+<strong>Main Features of an Object</strong><br/>
+- Fundamental pieces of blocks of OOP (Object Oriented Programming). As mentioned aboved they represent real-word entities with properties and methods.<br/>
+- Classes can be used and they are like <strong>blueprints for creating several objects.</strong><br/>
+- We can create functions that operate in a single object.<br/>
+- It allows us to create child classes that inherits properties and methods from its parent classes.<br/>
+- <strong>It helps to organize code.
+- It promotes reusability, and maintenance.</strong><br/>
+<br/>
+<strong> How to access an object?</strong><br/>
+<br/>
+You may access an object using dot notation:<br/><br/>
+object.foo; //output : "bar" <br/><br/>
+You may access an object using [ ]: <br/><br/>
+object["age"];//output: 42 <br/><br/>
+Some other examples:<br/><br/>
+object.bax.myProp;// Output : 12 <br/><br/>
+object.bax;//{myProp:12} <br/><br/>
 
 
 ### Techniques for creating objects: <br/>
